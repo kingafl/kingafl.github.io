@@ -47,6 +47,7 @@ body
 .face
 {
     content: '';
+    display: ;
     position: absolute;
     z-index: 4;
     top: 430px;
@@ -62,7 +63,7 @@ body
 {
     top: 10px;
 }*/
-#axis:hover 
+#face:hover 
 {
     transform: translate(0,10px);
     -webkit-transform: translate(0,10px);
