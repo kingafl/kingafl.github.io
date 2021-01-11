@@ -50,7 +50,10 @@ body
     position: absolute;
     z-index: 4;
     top: 40%;
-    left: 855px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 230px;
     height: 30px;
     background: rgb(89, 89, 94);
