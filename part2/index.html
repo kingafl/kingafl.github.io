@@ -6,18 +6,19 @@
     <link rel = "stylesheet" href = "style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </head>
+<div id="wrapper">
 <body>
     <img src = "pico.png"></img>
         <div class = "eyes">
             <div class = "eye"></div>
             <div class = "eye"></div>
         </div>
-        <div id = face class = "face">
+        <div class = "face">
             <audio id="boop" preload="auto">
                 <source src="audio/boop.mp3"></source>
             </audio>
         </div>
-    <script>
+    <script> <!--www.youtube.com/watch?v=WqgKe3dcXxg&ab_channel=OnlineTutorials-->
         document.querySelector('body').addEventListener('mousemove', eyeball);
         function eyeball(){var eye = document.querySelectorAll('.eye');
             eye.forEach(function(eye)
@@ -36,4 +37,5 @@
         }
     </script>
 </body>
+</div>
 </html>
