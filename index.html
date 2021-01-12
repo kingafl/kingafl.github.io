@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>buziek</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+<div id = "wrapper">
+<body>
+    <img src = "pico.png"></img>
+        <div class = "eyes">
+            <div class = "eye"></div>
+            <div class = "eye"></div>
+        </div>
+        <idiv class = "face">
+            <audio id="boop" preload="auto">
+                <source src="audio/boop.mp3"></source>
+            </audio>
+        </div>
+    <script> <!--www.youtube.com/watch?v=WqgKe3dcXxg&ab_channel=OnlineTutorials-->
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+        function eyeball(){var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye)
+            {
+                let x = (eye.getBoundingClientRect().left + eye.clientWidth / 2);
+                let y = (eye.getBoundingClientRect().top + eye.clientWidth / 2);
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (180 / Math.PI) * -1) + 270;
+                eye.style.transform = "rotate("+ rot + "deg)";
+            })
+        var boopOne = $("#boop")[0];
+	    $(".face")
+	    .mouseenter(function() {
+		boopOne.play();
+	    });   
+        }
+    </script>
+</body>
+</div>
+</html>
