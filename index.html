@@ -8,16 +8,18 @@
 </head>
 <div id = "wrapper">
 <body>
-    <img src = "pico.png"></img>
-        <div class = "eyes">
-            <div class = "eye"></div>
-            <div class = "eye"></div>
-        </div>
-        <idiv class = "face">
-             <audio id="cze" preload="auto">
-    	     	<source src="cze.mp3"></source>
-	     </audio>
-        </div>
+    <div class="text">Naciśnij aby aktywować</div>
+    <div class = "button"></div>
+        <img src = "pico.png"></img>
+            <div class = "eyes">
+                <div class = "eye"></div>
+                <div class = "eye"></div>
+            </div>
+            <idiv class = "face">
+                <audio id="cze" preload="auto">
+                    <source src="cze.mp3"></source>
+            </audio>
+            </div>
     <script> <!--www.youtube.com/watch?v=WqgKe3dcXxg&ab_channel=OnlineTutorials-->
         document.querySelector('body').addEventListener('mousemove', eyeball);
         function eyeball(){var eye = document.querySelectorAll('.eye');
